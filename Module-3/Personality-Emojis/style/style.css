@@ -1,0 +1,80 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100vh;
+}
+
+body {
+	font-family: Baloo;
+	background-image: linear-gradient(#5da4d9, #fff);
+	color: #fff;
+}
+
+h1 {
+	text-align: center;
+}
+
+.emojis {
+	text-align: center;
+}
+
+.emojis span {
+	font-size: 4rem;
+}
+
+.input-container {
+	display: flex;
+	margin-block: 2em;
+}
+
+.emoji-input {
+	padding: 1.5em 2em;
+	width: 50vw;
+	max-width: 600px;
+	margin: 0 auto;
+	border: 2px solid #5da4d9;
+	font-family: inherit;
+}
+
+.buttons {
+	max-width: 650px;
+	margin: 0 auto;
+}
+
+.buttons div {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+
+	margin: 1em auto;
+}
+
+button {
+	padding: 1.5em 2.2em;
+	width: 15em;
+	font-family: inherit;
+	border: 2px solid #5da4d9;
+	cursor: pointer;
+	color: #fff;
+}
+
+.save-btn {
+	background-color: #5da4d9;
+	width: 48%;
+}
+
+.save-btn:hover {
+	background-color: #5da3d979;
+}
+
+.delete-btn {
+	background-color: #ddce47;
+	width: 40%;
+	margin-inline: 3em;
+}
+
+.delete-btn:hover {
+	background-color: #ddce4763;
+}

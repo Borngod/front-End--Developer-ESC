@@ -1,0 +1,106 @@
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  max-height: 444px;
+  padding: 96px 71px;
+  background: #f9fafb;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #1f2937;
+    font-weight: 700;
+    font-size: 1.375rem;
+    z-index: 3;
+    svg {
+      color: #2e59f3;
+      width: 20px;
+      height: 20px;
+    }
+    h4 {
+      span {
+        color: #2e59f3;
+      }
+    }
+  }
+  &__text {
+    z-index: 3;
+    &__quote {
+      margin-top: 2.5rem;
+      color: #111827;
+      font-size: 1.5rem;
+      font-weight: 500;
+      max-width: 719px;
+      text-align: center;
+    }
+    &__source {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+      &__author {
+        color: #111827;
+      }
+      &__company {
+        color: #6b7280;
+      }
+      &__slash {
+        svg {
+          color: #2e59f3;
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+  &__dot-background {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 20%;
+    height: 70%;
+    background-image: radial-gradient(#e5e7eb 2px, transparent 0);
+    background-size: 20px 20px;
+    background-position: 10% 75%;
+    z-index: 2;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonial {
+    align-items: flex-start;
+    padding: 4.625rem 1rem;
+    &__title {
+      align-self: center;
+    }
+    &__text {
+      &__quote {
+        text-align: left;
+      }
+      &__source {
+        flex-direction: column;
+        align-items: flex-start;
+        &__slash {
+          display: none;
+        }
+      }
+    }
+    &__dot-background {
+      position: absolute;
+      top: 75%;
+      left: 0%;
+      width: 50%;
+      height: 25%;
+      background-image: radial-gradient(#e5e7eb 2px, transparent 0);
+      background-size: 20px 20px;
+      background-position: 10% 75%;
+      z-index: 2;
+    }
+  }
+}
